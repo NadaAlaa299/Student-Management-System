@@ -35,22 +35,31 @@ public class Manager {
         System.out.println("Students in List:");
         for (Student student:studentList)
         {
-            System.out.println(student);
+            System.out.println("Student ID: "+ student.getId());
+            System.out.println("Student Name: "+ student.getName());
+            System.out.println("Student Age: "+ student.getAge());
+            System.out.println();
         }
 
         System.out.println("Students in Set:");
         for (Student student : studentSet) {
-            System.out.println(student);
+            System.out.println("Student ID: "+ student.getId());
+            System.out.println("Student Name: "+ student.getName());
+            System.out.println("Student Age: "+ student.getAge());
+            System.out.println();
         }
 
         System.out.println("Students in Map:");
         studentMap.forEach((id, student) -> {
-            System.out.println("ID: " + id + ", Student Name: " + student.getName());
+            System.out.println("Student ID: " + id + "\n" +"Student Name: " + student.getName() + "\n" + "Student Age: "+ student.getAge()+"\n");
         });
 
         System.out.println("Students in Queue:");
         for (Student student : studentQueue) {
-            System.out.println(student);
+            System.out.println("Student ID: "+ student.getId());
+            System.out.println("Student Name: "+ student.getName());
+            System.out.println("Student Age: "+ student.getAge());
+            System.out.println();
         }
     }
 }
